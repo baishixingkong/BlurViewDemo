@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FXblurViewVC">
+            <connections>
+                <outlet property="bgImageView" destination="wec-uo-wZG" id="s39-Mo-C2w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgView.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wec-uo-wZG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wec-uo-wZG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6au-h0-Qpz"/>
+                <constraint firstAttribute="trailing" secondItem="wec-uo-wZG" secondAttribute="trailing" id="Yr2-mw-WG1"/>
+                <constraint firstAttribute="bottom" secondItem="wec-uo-wZG" secondAttribute="bottom" id="pQz-Fl-wCD"/>
+                <constraint firstItem="wec-uo-wZG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zhb-7M-s7J"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgView.jpg" width="46080" height="81936"/>
+    </resources>
+</document>
