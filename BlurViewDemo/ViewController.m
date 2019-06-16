@@ -32,8 +32,6 @@
         [btn setTitle:nameArr[i] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     }
-    
-
 
 }
 -(void)click:(UIButton*)sender{
@@ -92,6 +90,12 @@
             break;
         case 1003:
         {
+            /*
+             Core Image 是苹果用来简化图片处理的框架，在 iOS 平台上，5.0 之后就出现了 Core Image 的 API。Core Image 的 API 被放在 CoreImage.framework 库中。不过直到iOS6.0才开始支持模糊。这个API调用起来很方便简洁。
+             优点: 模糊效果较好，模糊程度的可调范围很大，可以根据实际的需求随意调试。
+             缺点: 耗时
+             需要导入: #import <CoreImage/CoreImage.h>
+            */
             CoreImageVC *vc = [[CoreImageVC alloc]init];
             UIBarButtonItem *backItem = [[UIBarButtonItem alloc]init];
             backItem.title = @"";
